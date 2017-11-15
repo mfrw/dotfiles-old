@@ -37,6 +37,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
 Plugin 'sjl/gundo.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'junegunn/fzf'
+Plugin 'scrooloose/nerdcommenter'
 "Plugin 'xolox/vim-misc'
 "Plugin 'xolox/vim-easytags'
 "Plugin 'scrooloose/syntastic'
@@ -48,5 +50,6 @@ filetype plugin indent on
 "execute pathogen#infect()
 
 " GO Related Stuff
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = 'goimports'
+let g:go_info_mode = 'guru'
 au FileType go nmap <leader>r <Plug>(go-run)
